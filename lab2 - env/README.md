@@ -1,0 +1,1 @@
+docker run -d --name Lab2 -p 5000:4000 lab2-env:v0.1
