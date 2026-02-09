@@ -7,8 +7,6 @@ WORKDIR /usr/src/app
 # copy nodejs configuration file
 COPY ./package.json .
 
-ENV PORT=4000
-
 #create node_modules: install express based on package.json file
 RUN npm install
 
@@ -16,10 +14,10 @@ RUN npm install
 COPY . .
 
 #which port preffered by developer but not must be
-EXPOSE 4000
+EXPOSE 5000
 
 #start the application
-CMD ["npm","start"]
+CMD ["node","server.js"]
 
 
 #git clone

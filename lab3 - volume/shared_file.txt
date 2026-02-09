@@ -1,0 +1,3 @@
+shared file first line
+add line from container
+new line from VSCode
