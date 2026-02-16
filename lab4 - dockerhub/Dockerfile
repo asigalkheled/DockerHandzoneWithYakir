@@ -4,14 +4,14 @@ WORKDIR /usr/src/app
 
 COPY ./package.json .
 
-ENV PORT=3000
+RUN npm install
 
-ENV APP_ID=App1
+COPY . .
 
 RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["npm","start"]
